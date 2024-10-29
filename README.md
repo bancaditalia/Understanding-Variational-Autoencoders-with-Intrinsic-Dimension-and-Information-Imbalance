@@ -3,7 +3,7 @@ Code to reproduce the results of the paper "Understanding Variational Autoencode
 
 ## Prerequisites
 Ensure that you have Python installed (Python 3.11 or later is recommended) and install the necessary dependencies using the following command:
-pip install -r requirements.txt (TODO)
+pip install -r requirements.txt 
  
 ## VAE Model Training Script
 
