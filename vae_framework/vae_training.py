@@ -6,7 +6,7 @@ from vae_class import VAE_Model
 def main(args):
     
     for dim in args.latent_dim:
-        model = VAE_Model(model_name=args.model, model_kwargs={"latent_dim": dim})
+        model = VAE_Model(model_kwargs={"latent_dim": dim})
         loss = model.train(dataset_name=args.dataset, num_epochs=0, batch_size=args.batch_size)
         model.save_network(model_name=f"epoch_0_dim_{dim}")
         for epoch in range(1, args.epochs + 1):

@@ -38,7 +38,6 @@ class VAE_Model:
                 dataset_name,
                 local=False,
                 batch_size=batch_size,
-                type=self.model_name,
             )
         else:
             create_subset(dataset_name, num_samples)
@@ -46,7 +45,6 @@ class VAE_Model:
                 dataset_name,
                 local=True,
                 batch_size=batch_size,
-                type=self.model_name,
             )
 
         self.network, self.optimizer, loss = train_vae(
