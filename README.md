@@ -3,6 +3,7 @@ Code to reproduce the results of the paper "Understanding Variational Autoencode
 
 ## Prerequisites
 Ensure that you have Python installed (Python 3.11 or later is recommended) and install the necessary dependencies using the following command:
+
 pip install -r requirements.txt 
  
 ## VAE Model Training Script
@@ -12,6 +13,7 @@ The script vae_training.py trains a VAE model on a selected dataset, saving mode
 
 ### Basic Command
 To run the script, use:
+
 python vae_training.py --dataset <dataset_name> --epochs <number_of_epochs>
 
 ### Arguments
@@ -22,8 +24,9 @@ python vae_training.py --dataset <dataset_name> --epochs <number_of_epochs>
 --batch_size: Defines the batch size for training. Default is 256.
 
 ### Example Command
-To train the model on the mnist dataset for 100 epochs with a batch size of 128 and latent dimensions of 16 and 32, saving checkpoints for epoch 1, 50, 100 and 200 epochs, run:
-python vae_training.py --dataset mnist --epochs 100 --batch_size 128 --latent_dim [16, 32] --save_interval [1, 50, 100, 200]
+To train the model on the cifar10 dataset for 100 epochs with a batch size of 128 and latent dimensions of 16 and 32, saving checkpoints for epoch 1, 50, 100 and 200 epochs, run:
+
+python vae_training.py --dataset cifar10 --epochs 100 --batch_size 128 --latent_dim 16 32 --save_interval 1 50 100 200
 
 ## VAE Analysis Functions
 After training, you can use additional functions to analyze the saved networks. These functions are designed to compute and save various metrics, such as distances between network states, intrinsic dimensions, and imbalance metrics across layers. Each function outputs results as .json files for easy data handling and interpretation.
