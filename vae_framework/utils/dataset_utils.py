@@ -171,11 +171,6 @@ def load_dataset(
     subset_size = int(0.8 * dataset_size)
     subset_indices = indices[:subset_size]
 
-    # save the indices to a txt file
-    with open(os.path.join(subset_path, f"subsets/{dataset_name}_indices.txt"), "w") as f:
-        for idx in subset_indices:
-            f.write(f"{idx}\n")
-    
     # Create a SubsetRandomSampler for the random subset
     subset_sampler = SubsetRandomSampler(subset_indices)
 
