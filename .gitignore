@@ -162,3 +162,4 @@ cython_debug/
 #.idea/
 
 MNIST/
+cifar-10-batches-py/

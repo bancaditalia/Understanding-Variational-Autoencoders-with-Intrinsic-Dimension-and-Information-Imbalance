@@ -5,3 +5,4 @@ torch
 torchvision
 joblib
 scipy
+pytorch_lightning
