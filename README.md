@@ -12,7 +12,7 @@ pip install -r requirements.txt
 The script vae_training.py trains a VAE model on a selected dataset, saving model checkpoints and logging losses as specified in the input arguments.
 
 ### Basic Command
-To run the script, use:
+To run the script, go into the vae_framework folder and use:
 
 python vae_training.py --dataset <dataset_name> --epochs <number_of_epochs>
 
@@ -41,8 +41,3 @@ get_all_imbalances_first_last: Calculates and saves the imbalance between the fi
 get_all_imbalances_train: Computes the imbalance between consecutive layers (i to i+1) within each network. Results are saved as JSON files.
 
 get_all_imbalances_inter_dims: Calculates the imbalance across networks with different latent dimensions. Results are stored in JSON format.
-
-## Disclaimer
-
-This package is an outcome of a research project. All errors are those of
-the authors. All views expressed are personal views, not those of Bank of Italy.
