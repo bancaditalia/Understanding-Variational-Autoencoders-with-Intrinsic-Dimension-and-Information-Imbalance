@@ -12,7 +12,7 @@ pip install -r requirements.txt
 The script vae_training.py trains a VAE model on a selected dataset, saving model checkpoints and logging losses as specified in the input arguments.
 
 ### Basic Command
-To run the script, use:
+To run the script, go into the vae_framework folder and use:
 
 python vae_training.py --dataset <dataset_name> --epochs <number_of_epochs>
 
