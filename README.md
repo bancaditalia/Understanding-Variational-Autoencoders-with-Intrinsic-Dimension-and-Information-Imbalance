@@ -32,6 +32,8 @@ python vae_training.py --dataset cifar10 --epochs 100 --batch_size 128 --latent_
 After training, you can use additional functions to analyze the saved networks. These functions are designed to compute and save various metrics, such as distances between network states, intrinsic dimensions, and imbalance metrics across layers. Each function outputs results as .json files for easy data handling and interpretation.
 
 ### Analysis Commands
+First run get_all_distances with the selected latent dimensions and epochs to compute the distances needed for further analysis.
+
 get_all_distances: Computes and saves the distances between layers of the saved networks. Distances are stored as JSON files for further analysis.
 
 get_all_ids: Computes the intrinsic dimensions for each layers of the trained networks. Results are saved in JSON format.
