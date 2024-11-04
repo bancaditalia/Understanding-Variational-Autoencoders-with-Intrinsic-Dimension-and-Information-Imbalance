@@ -1,5 +1,5 @@
-# VAEs-through-ID-and-II
-Code to reproduce the results of the paper "Understanding Variational Autoencoders with Intrinsic Dimension and Information Imbalance"
+# Understanding-Variational-Autoencoders-with-Intrinsic-Dimension-and-Information-Imbalance
+Code to reproduce the results of the paper "Understanding Variational Autoencoders with Intrinsic Dimension and Information Imbalance" https://openreview.net/pdf?id=uViw1lr2mZ
 
 ## Prerequisites
 Ensure that you have Python installed (Python 3.11 or later is recommended) and install the necessary dependencies using the following command:
